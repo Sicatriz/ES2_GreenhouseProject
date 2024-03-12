@@ -1,0 +1,3 @@
+blauw ==> bare
+groen ==> bruin
+geel ==> oranje
