@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Greenhouse_v2.PcbDoc   10/04/2024  14:10:59
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Greenhouse_v2-RoundHoles.TXT
+ASCII SlotHoles File : Greenhouse_v2-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.508mm (20mil)                                           Round             110       PTH        852.24mm (33.55inch)
+T2      0.55mm (22mil)                                            Slot              2         PTH        16.83mm (0.66inch)
+T3      0.711mm (28mil)                                           Round             2         PTH        2.16mm (0.09inch)
+T4      0.733mm (29mil)                                           Round             28        PTH        79.38mm (3.13inch)
+T5      0.85mm (33mil)                                            Slot              2         PTH        16.02mm (0.63inch)
+T6      1.02mm (40mil)                                            Round             32        PTH        197.81mm (7.79inch)
+T7      1.1mm (43mil)                                             Round             108       PTH        523.01mm (20.59inch)
+T8      1.143mm (45mil)                                           Round             2         PTH        15.24mm (0.60inch)
+T9      1.2mm (47mil)                                             Round             10        PTH        194.41mm (7.65inch)
+T10     3.556mm (140mil)                                          Round             4         PTH        304.80mm (12.00inch)
+T11     0.8mm (31mil)                                             Round             2         NPTH       5.00mm (0.20inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              302
+
+Total Processing Time (hh:mm:ss) : 00:00:00

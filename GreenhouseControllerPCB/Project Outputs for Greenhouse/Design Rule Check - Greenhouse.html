@@ -1,0 +1,676 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9/04/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:19:17</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc" class="file"><acronym title="D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc">D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">1</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">107</td></tr>
+</table>
+</td>
+</table><a name="IDLCU4KKEEN24FEP4NLVJHMNPE1B4NVGB5IXIQZDKEDPIUUQNNAGRO"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVYXXF1CQQZWKNDVOHBDASUWZVOMJHJMYHPDFLVEAX0XXXROXKYYJ">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">1</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRJ3G2K3ESFNOKWJTJ22CPLIV2DPPPJECQSTODNEUWNPC3IWOQ4ZK">Clearance Constraint (Gap=7mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZDDKKGCQV5C0OTUGYWMTGY24LGWG3OIIBQQ2NOKIL2X2DWEPHHOG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID353POOTGAOEKHTX5XAPZIKP4OJ51LWLEW4NCUGKJ1OIYOVUURXMN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYGS2YKUPRF5AMGHWOUVMODZDWFWDUCHWBN2UY2IP1RFASONMEYQL">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWS1XARULYMB04DQBH4XPGM5EPVFDMVPGEHEZ1G5FCJBWSURTJTB">Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZYGLV3UVAVXEFQDEJPXSJ5BHCEYLCEZAVJ0YYENVSIVP1RDG3K5M">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=20mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXT00D2S3XARJPTW2DX5BJF0MJKU1HJHRY1OLP5LVUKH1LIUZ555O">Hole Size Constraint (Min=10mil) (Max=200mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDT0I1IWAPWA33OKWTYBVRSKOTRH4QSDHCBPHXTAH5UCIS34LZSL4O">Hole To Hole Clearance (Gap=11mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA1GEMRK2HYYXCPJA1WD0KIGUFNIJAGGLVLADXLICABY2Q4L2SNGE">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">24</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR4RJSLOFLVQRILUTSCRKJ1LUFNYV0TL3MVXB3UJ10BKKIE0POWDL">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</a></td>
+<td class="column2">16</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUIQUIATFUK2RGMNXMLT1QNF4TG5EXRY0KR4E1OD25TX1UOUWWGFO">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">64</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID51Z4XESVBH13B41RTVIIIRKNGOJR1IEMQDIQNDNZGRMU31KQHLWB">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEZL1LIMHMAKKAETQSKOU01CSIYVOH14RKP1JLFRYFGAJVVKS15K">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">107</td>
+</tr>
+</table><br><a name="IDZGF0QKIEJB1ILZLWTJSZPHYQAN3203FXQTPVMNI01TUNI0STTS2"><h2>Warnings</h2></a><a name="IDVYXXF1CQQZWKNDVOHBDASUWZVOMJHJMYHPDFLVEAX0XXXROXKYYJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Polygon named: NONET_L-01_P-001 In net GND On Bottom Layer</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID353POOTGAOEKHTX5XAPZIKP4OJ51LWLEW4NCUGKJ1OIYOVUURXMN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1305.63mil|Location2.X=1585.118mil|Location1.Y=2010mil|Location2.Y=2209.252mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1305.63mil|Location2.X=1585.118mil|Location1.Y=2010mil|Location2.Y=2209.252mil|Absolute=True">Un-Routed Net Constraint: Net CON_USB_P Between Pad R7-1(1405.63mil,2110mil) on Top Layer [Unplated] And Track (1485.118mil,2109.252mil)(1883.15mil,2109.252mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=975mil|Location2.X=1239.37mil|Location1.Y=1384.842mil|Location2.Y=1575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=975mil|Location2.X=1239.37mil|Location1.Y=1384.842mil|Location2.Y=1575mil|Absolute=True">Un-Routed Net Constraint: Net CON_USB_N Between Track (1075mil,1484.842mil)(1131.496mil,1541.339mil) on Top Layer And Track (1139.37mil,1475mil)(1153.74mil,1475mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYGS2YKUPRF5AMGHWOUVMODZDWFWDUCHWBN2UY2IP1RFASONMEYQL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Modified Polygon (Allow modified: No), (Allow shelved: No)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1000mil|Location2.X=4900mil|Location1.Y=1000mil|Location2.Y=4775mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1000mil|Location2.X=4900mil|Location1.Y=1000mil|Location2.Y=4775mil|Absolute=True">Modified Polygon: Polygon Shelved  (NONET_L-01_P-001) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDA1GEMRK2HYYXCPJA1WD0KIGUFNIJAGGLVLADXLICABY2Q4L2SNGE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1497.002mil|Location2.X=1508.252mil|Location1.Y=1659.892mil|Location2.Y=1671.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1497.002mil|Location2.X=1508.252mil|Location1.Y=1659.892mil|Location2.Y=1671.142mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.711mil &lt; 10mil) Between Pad C1-2(1475mil,1589.764mil) on Top Layer And Via (1502.627mil,1697.373mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [5.711mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4479.375mil|Location2.X=4490.625mil|Location1.Y=1947.879mil|Location2.Y=1959.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4479.375mil|Location2.X=4490.625mil|Location1.Y=1947.879mil|Location2.Y=1959.129mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.008mil &lt; 10mil) Between Pad C32-1(4480mil,1979.724mil) on Top Layer And Via (4485mil,1920mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.008mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1819.375mil|Location2.X=1830.625mil|Location1.Y=1150.206mil|Location2.Y=1161.456mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1819.375mil|Location2.X=1830.625mil|Location1.Y=1150.206mil|Location2.Y=1161.456mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.661mil &lt; 10mil) Between Pad IC5-3(1825mil,1205.906mil) on Top Layer And Via (1825mil,1126mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [1.661mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=2032.761mil|Location2.Y=2044.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=2032.761mil|Location2.Y=2044.011mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.59mil &lt; 10mil) Between Pad J7-1(1239.173mil,2051.181mil) on Top Layer And Pad J7-2(1239.173mil,2025.591mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=2007.17mil|Location2.Y=2018.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=2007.17mil|Location2.Y=2018.42mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.591mil &lt; 10mil) Between Pad J7-2(1239.173mil,2025.591mil) on Top Layer And Pad J7-3(1239.173mil,2000mil) on Top Layer [Top Solder] Mask Sliver [2.591mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=1981.58mil|Location2.Y=1992.83mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.048mil|Location2.X=1215.298mil|Location1.Y=1981.58mil|Location2.Y=1992.83mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.591mil &lt; 10mil) Between Pad J7-3(1239.173mil,2000mil) on Top Layer And Pad J7-4(1239.173mil,1974.409mil) on Top Layer [Top Solder] Mask Sliver [2.591mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1263.048mil|Location2.X=1274.298mil|Location1.Y=1955.989mil|Location2.Y=1967.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1263.048mil|Location2.X=1274.298mil|Location1.Y=1955.989mil|Location2.Y=1967.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.59mil &lt; 10mil) Between Pad J7-4(1239.173mil,1974.409mil) on Top Layer And Pad J7-5(1239.173mil,1948.819mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.045mil|Location2.X=1215.295mil|Location1.Y=2111.508mil|Location2.Y=2122.758mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.045mil|Location2.X=1215.295mil|Location1.Y=2111.508mil|Location2.Y=2122.758mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.778mil &lt; 10mil) Between Pad J7-MH1(1197.835mil,2098.425mil) on Multi-Layer And Pad J7-Shell(1239.173mil,2146.653mil) on Multi-Layer [Top Solder] Mask Sliver [4.778mil] / [Bottom Solder] Mask Sliver [4.778mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.045mil|Location2.X=1215.295mil|Location1.Y=1877.242mil|Location2.Y=1888.492mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1204.045mil|Location2.X=1215.295mil|Location1.Y=1877.242mil|Location2.Y=1888.492mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.778mil &lt; 10mil) Between Pad J7-MH2(1197.835mil,1901.575mil) on Multi-Layer And Pad J7-Shell(1239.173mil,1853.347mil) on Multi-Layer [Top Solder] Mask Sliver [4.778mil] / [Bottom Solder] Mask Sliver [4.778mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2521.897mil|Location2.X=2533.147mil|Location1.Y=2174.043mil|Location2.Y=2185.293mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2521.897mil|Location2.X=2533.147mil|Location1.Y=2174.043mil|Location2.Y=2185.293mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.583mil &lt; 10mil) Between Pad R1-1(2500.925mil,2215mil) on Top Layer And Via (2555mil,2160mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.583mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.21mil|Location2.X=2572.46mil|Location1.Y=1730.674mil|Location2.Y=1741.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.21mil|Location2.X=2572.46mil|Location1.Y=1730.674mil|Location2.Y=1741.924mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U4-1(2539.213mil,1717.598mil) on Top Layer And Pad U4-2(2539.213mil,1755mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.21mil|Location2.X=2572.46mil|Location1.Y=1768.076mil|Location2.Y=1779.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2561.21mil|Location2.X=2572.46mil|Location1.Y=1768.076mil|Location2.Y=1779.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U4-2(2539.213mil,1755mil) on Top Layer And Pad U4-3(2539.213mil,1792.402mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.54mil|Location2.X=1678.79mil|Location1.Y=2378.076mil|Location2.Y=2389.326mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.54mil|Location2.X=1678.79mil|Location1.Y=2378.076mil|Location2.Y=2389.326mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U5-1(1700.787mil,2402.402mil) on Top Layer And Pad U5-2(1700.787mil,2365mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.54mil|Location2.X=1678.79mil|Location1.Y=2340.674mil|Location2.Y=2351.924mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1667.54mil|Location2.X=1678.79mil|Location1.Y=2340.674mil|Location2.Y=2351.924mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U5-2(1700.787mil,2365mil) on Top Layer And Pad U5-3(1700.787mil,2327.598mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.076mil|Location2.X=4364.326mil|Location1.Y=2311.21mil|Location2.Y=2322.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.076mil|Location2.X=4364.326mil|Location1.Y=2311.21mil|Location2.Y=2322.46mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U6-1(4377.402mil,2289.213mil) on Top Layer And Pad U6-2(4340mil,2289.213mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4315.674mil|Location2.X=4326.924mil|Location1.Y=2311.21mil|Location2.Y=2322.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4315.674mil|Location2.X=4326.924mil|Location1.Y=2311.21mil|Location2.Y=2322.46mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U6-2(4340mil,2289.213mil) on Top Layer And Pad U6-3(4302.598mil,2289.213mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2125.674mil|Location2.X=2136.924mil|Location1.Y=4362.54mil|Location2.Y=4373.79mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2125.674mil|Location2.X=2136.924mil|Location1.Y=4362.54mil|Location2.Y=4373.79mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U7-1(2112.598mil,4395.787mil) on Top Layer And Pad U7-2(2150mil,4395.787mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2163.076mil|Location2.X=2174.326mil|Location1.Y=4362.54mil|Location2.Y=4373.79mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2163.076mil|Location2.X=2174.326mil|Location1.Y=4362.54mil|Location2.Y=4373.79mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.78mil &lt; 10mil) Between Pad U7-2(2150mil,4395.787mil) on Top Layer And Pad U7-3(2187.402mil,4395.787mil) on Top Layer [Top Solder] Mask Sliver [5.78mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2687.733mil|Location2.X=2698.983mil|Location1.Y=2662.733mil|Location2.Y=2673.983mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2687.733mil|Location2.X=2698.983mil|Location1.Y=2662.733mil|Location2.Y=2673.983mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.563mil &lt; 10mil) Between Via (2675mil,2640mil) from Top Layer to Bottom Layer And Via (2711.716mil,2696.716mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.563mil] / [Bottom Solder] Mask Sliver [9.563mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3609.375mil|Location2.X=3620.625mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3609.375mil|Location2.X=3620.625mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.667mil &lt; 10mil) Between Via (3581.667mil,3765mil) from Top Layer to Bottom Layer And Via (3648.334mil,3765mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.667mil] / [Bottom Solder] Mask Sliver [8.667mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3676.042mil|Location2.X=3687.292mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3676.042mil|Location2.X=3687.292mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.667mil &lt; 10mil) Between Via (3648.334mil,3765mil) from Top Layer to Bottom Layer And Via (3715mil,3765mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.667mil] / [Bottom Solder] Mask Sliver [8.667mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3742.709mil|Location2.X=3753.959mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3742.709mil|Location2.X=3753.959mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.667mil &lt; 10mil) Between Via (3715mil,3765mil) from Top Layer to Bottom Layer And Via (3781.667mil,3765mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.667mil] / [Bottom Solder] Mask Sliver [8.667mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.375mil|Location2.X=3820.625mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.375mil|Location2.X=3820.625mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.667mil &lt; 10mil) Between Via (3781.667mil,3765mil) from Top Layer to Bottom Layer And Via (3848.333mil,3765mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.667mil] / [Bottom Solder] Mask Sliver [8.667mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.042mil|Location2.X=3887.292mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.042mil|Location2.X=3887.292mil|Location1.Y=3759.375mil|Location2.Y=3770.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (8.667mil &lt; 10mil) Between Via (3848.333mil,3765mil) from Top Layer to Bottom Layer And Via (3915mil,3765mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [8.667mil] / [Bottom Solder] Mask Sliver [8.667mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDR4RJSLOFLVQRILUTSCRKJ1LUFNYV0TL3MVXB3UJ10BKKIE0POWDL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3292.801mil|Location2.X=3297.134mil|Location1.Y=1362.821mil|Location2.Y=1367.154mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3292.801mil|Location2.X=3297.134mil|Location1.Y=1362.821mil|Location2.Y=1367.154mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C15-1(3290.276mil,1345mil) on Top Layer And Text "C15" (3195mil,1325mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.274mil|Location2.X=3219.608mil|Location1.Y=1360.373mil|Location2.Y=1364.706mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.274mil|Location2.X=3219.608mil|Location1.Y=1360.373mil|Location2.Y=1364.706mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C15-2(3199.724mil,1345mil) on Top Layer And Text "C15" (3195mil,1325mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3197.316mil|Location2.X=3201.649mil|Location1.Y=1242.243mil|Location2.Y=1246.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3197.316mil|Location2.X=3201.649mil|Location1.Y=1242.243mil|Location2.Y=1246.576mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C16-1(3199.724mil,1270mil) on Top Layer And Text "+5v/3v3" (3134.712mil,1175.288mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.274mil|Location2.X=3219.608mil|Location1.Y=1285.373mil|Location2.Y=1289.706mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3215.274mil|Location2.X=3219.608mil|Location1.Y=1285.373mil|Location2.Y=1289.706mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C16-1(3199.724mil,1270mil) on Top Layer And Text "C16" (3195mil,1250mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3292.801mil|Location2.X=3297.134mil|Location1.Y=1287.821mil|Location2.Y=1292.154mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3292.801mil|Location2.X=3297.134mil|Location1.Y=1287.821mil|Location2.Y=1292.154mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C16-2(3290.276mil,1270mil) on Top Layer And Text "C16" (3195mil,1250mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2184.504mil|Location2.X=2188.838mil|Location1.Y=2840.825mil|Location2.Y=2845.159mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2184.504mil|Location2.X=2188.838mil|Location1.Y=2840.825mil|Location2.Y=2845.159mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C17-1(2175mil,2825.276mil) on Top Layer And Text "J5" (2166.677mil,2830.006mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1659.841mil|Location2.X=1664.175mil|Location1.Y=1567.84mil|Location2.Y=1572.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1659.841mil|Location2.X=1664.175mil|Location1.Y=1567.84mil|Location2.Y=1572.173mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C3-1(1679.724mil,1575mil) on Top Layer And Text "IC5" (1650.016mil,1570.006mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1747.817mil|Location2.X=1752.15mil|Location1.Y=1587.833mil|Location2.Y=1592.167mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1747.817mil|Location2.X=1752.15mil|Location1.Y=1587.833mil|Location2.Y=1592.167mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C3-2(1770.276mil,1575mil) on Top Layer And Text "IC5" (1650.016mil,1570.006mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4617.125mil|Location2.X=4621.458mil|Location1.Y=3570.392mil|Location2.Y=3574.726mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4617.125mil|Location2.X=4621.458mil|Location1.Y=3570.392mil|Location2.Y=3574.726mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C37-1(4610mil,3590.276mil) on Top Layer And Track (4619.291mil,3225mil)(4619.291mil,3925mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4617.125mil|Location2.X=4621.458mil|Location1.Y=3479.841mil|Location2.Y=3484.175mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4617.125mil|Location2.X=4621.458mil|Location1.Y=3479.841mil|Location2.Y=3484.175mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad C37-2(4610mil,3499.724mil) on Top Layer And Track (4619.291mil,3225mil)(4619.291mil,3925mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3283.128mil|Location2.X=3290.861mil|Location1.Y=1435.538mil|Location2.Y=1442.914mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3283.128mil|Location2.X=3290.861mil|Location1.Y=1435.538mil|Location2.Y=1442.914mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.425mil &lt; 5mil) Between Pad IC1-17(3275mil,1458.74mil) on Multi-Layer And Text "C22" (3201.684mil,1395.006mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.425mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1072.158mil|Location2.X=1076.491mil|Location1.Y=1662.394mil|Location2.Y=1666.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1072.158mil|Location2.X=1076.491mil|Location1.Y=1662.394mil|Location2.Y=1666.727mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad MS1-1(1100mil,1700mil) on Multi-Layer And Text "VR1" (1034.337mil,1628.002mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.765mil|Location2.X=2141.098mil|Location1.Y=3447.833mil|Location2.Y=3452.167mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2136.765mil|Location2.X=2141.098mil|Location1.Y=3447.833mil|Location2.Y=3452.167mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 5mil) Between Pad P5-1(2160mil,3455mil) on Multi-Layer And Text "from 16MHz to 10MHz), *Replace Y2 (change from 16MHz to 8MHz)." (1050mil,3459.286mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1398.202mil|Location2.X=1404.452mil|Location1.Y=2137.897mil|Location2.Y=2144.147mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1398.202mil|Location2.X=1404.452mil|Location1.Y=2137.897mil|Location2.Y=2144.147mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.958mil &lt; 5mil) Between Pad R7-1(1405.63mil,2110mil) on Top Layer And Text "R7" (1374.669mil,2147.002mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.958mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1071.199mil|Location2.X=1077.449mil|Location1.Y=1618.968mil|Location2.Y=1625.218mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1071.199mil|Location2.X=1077.449mil|Location1.Y=1618.968mil|Location2.Y=1625.218mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.817mil &lt; 5mil) Between Pad VR1-1(1068.504mil,1600mil) on Top Layer And Text "VR1" (1034.337mil,1628.002mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.817mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1111.186mil|Location2.X=1117.436mil|Location1.Y=1618.968mil|Location2.Y=1625.218mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1111.186mil|Location2.X=1117.436mil|Location1.Y=1618.968mil|Location2.Y=1625.218mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.817mil &lt; 5mil) Between Pad VR1-2(1131.496mil,1600mil) on Top Layer And Text "VR1" (1034.337mil,1628.002mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [4.817mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUIQUIATFUK2RGMNXMLT1QNF4TG5EXRY0KR4E1OD25TX1UOUWWGFO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1262.762mil|Location2.X=1274.012mil|Location1.Y=3265.05mil|Location2.Y=3276.3mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1262.762mil|Location2.X=1274.012mil|Location1.Y=3265.05mil|Location2.Y=3276.3mil|Absolute=True">Silk To Silk Clearance Constraint: (8.651mil &lt; 10mil) Between Text "*Replace Y1 (change from 16MHz to 10MHz)," (1050mil,3284.286mil) on Top Overlay And Text "*Replace Y2 (change from 16MHz to 8MHz)." (1050mil,3234.286mil) on Top Overlay Silk Text to Silk Clearance [8.651mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3331.853mil|Location2.X=3343.103mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3331.853mil|Location2.X=3343.103mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True">Silk To Silk Clearance Constraint: (5.056mil &lt; 10mil) Between Text "+3v3" (3336.379mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [5.056mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=1463.317mil|Location2.Y=1474.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=1463.317mil|Location2.Y=1474.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,1450.288mil) on Top Overlay And Track (4767.953mil,1414.094mil)(4767.953mil,1725.906mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=1928.317mil|Location2.Y=1939.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=1928.317mil|Location2.Y=1939.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,1915.288mil) on Top Overlay And Track (4767.953mil,1884.094mil)(4767.953mil,2195.905mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=2398.317mil|Location2.Y=2409.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=2398.317mil|Location2.Y=2409.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,2385.288mil) on Top Overlay And Track (4767.953mil,2354.095mil)(4767.953mil,2665.905mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=2868.317mil|Location2.Y=2879.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=2868.317mil|Location2.Y=2879.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,2855.288mil) on Top Overlay And Track (4767.953mil,2824.095mil)(4767.953mil,3135.905mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=3338.317mil|Location2.Y=3349.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=3338.317mil|Location2.Y=3349.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,3325.288mil) on Top Overlay And Track (4767.953mil,3294.095mil)(4767.953mil,3605.905mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=3808.317mil|Location2.Y=3819.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4770.9mil|Location2.X=4782.15mil|Location1.Y=3808.317mil|Location2.Y=3819.567mil|Absolute=True">Silk To Silk Clearance Constraint: (9.27mil &lt; 10mil) Between Text "+5/3v3" (4791.86mil,3795.288mil) on Top Overlay And Track (4767.953mil,3764.095mil)(4767.953mil,4175.905mil) on Top Overlay Silk Text to Silk Clearance [9.27mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3432.686mil|Location2.X=3443.936mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3432.686mil|Location2.X=3443.936mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True">Silk To Silk Clearance Constraint: (5.056mil &lt; 10mil) Between Text "+5v" (3437.212mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [5.056mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3191.167mil|Location2.X=3198.833mil|Location1.Y=1252.831mil|Location2.Y=1260.498mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3191.167mil|Location2.X=3198.833mil|Location1.Y=1252.831mil|Location2.Y=1260.498mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "+5v/3v3" (3134.712mil,1175.288mil) on Top Overlay And Text "C16" (3195mil,1250mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3130.186mil|Location2.X=3141.436mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3130.186mil|Location2.X=3141.436mil|Location1.Y=1173.989mil|Location2.Y=1185.239mil|Absolute=True">Silk To Silk Clearance Constraint: (5.056mil &lt; 10mil) Between Text "+5v/3v3" (3134.712mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [5.056mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2481.361mil|Location2.Y=2492.611mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2481.361mil|Location2.Y=2492.611mil|Absolute=True">Silk To Silk Clearance Constraint: (5mil &lt; 10mil) Between Text "16U2 DFU mode Enabled - Short 2 &amp; 3" (2760mil,2466.935mil) on Top Overlay And Track (2750mil,2450mil)(2750mil,2850mil) on Top Overlay Silk Text to Silk Clearance [5mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1918.664mil|Location2.X=1929.914mil|Location1.Y=3489.795mil|Location2.Y=3501.045mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1918.664mil|Location2.X=1929.914mil|Location1.Y=3489.795mil|Location2.Y=3501.045mil|Absolute=True">Silk To Silk Clearance Constraint: (9.159mil &lt; 10mil) Between Text "2) 3.3V IO - Remove R27, Fit R28, *Replace Y1 (change " (1049.954mil,3509.286mil) on Top Overlay And Text "from 16MHz to 10MHz), *Replace Y2 (change from 16MHz to 8MHz)." (1050mil,3459.286mil) on Top Overlay Silk Text to Silk Clearance [9.159mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2916.495mil|Location2.Y=2927.745mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2916.495mil|Location2.Y=2927.745mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "5TE_1" (4641.268mil,2820mil) on Top Overlay And Track (4662.047mil,2824.095mil)(4662.047mil,3135.905mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2479.277mil|Location2.Y=2490.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2479.277mil|Location2.Y=2490.527mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "5TE_2" (4641.268mil,2350mil) on Top Overlay And Track (4662.047mil,2354.095mil)(4662.047mil,2665.905mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2014.277mil|Location2.Y=2025.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=2014.277mil|Location2.Y=2025.527mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "5TE_3" (4641.268mil,1885mil) on Top Overlay And Track (4662.047mil,1884.094mil)(4662.047mil,2195.905mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=1506.495mil|Location2.Y=1517.745mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=1506.495mil|Location2.Y=1517.745mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "5TE_4" (4641.268mil,1410mil) on Top Overlay And Track (4662.047mil,1414.094mil)(4662.047mil,1725.906mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3926.262mil|Location2.X=3937.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3926.262mil|Location2.X=3937.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True">Silk To Silk Clearance Constraint: (1.027mil &lt; 10mil) Between Text "AD_0" (3931.887mil,1178.113mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.027mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.262mil|Location2.X=4036.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.262mil|Location2.X=4036.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True">Silk To Silk Clearance Constraint: (1.027mil &lt; 10mil) Between Text "AD_1" (4030.887mil,1178.113mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.027mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4124.262mil|Location2.X=4135.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4124.262mil|Location2.X=4135.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True">Silk To Silk Clearance Constraint: (1.027mil &lt; 10mil) Between Text "AD_2" (4129.887mil,1178.113mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.027mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4223.262mil|Location2.X=4234.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4223.262mil|Location2.X=4234.512mil|Location1.Y=1171.975mil|Location2.Y=1183.225mil|Absolute=True">Silk To Silk Clearance Constraint: (1.027mil &lt; 10mil) Between Text "AD_3" (4228.887mil,1178.113mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.027mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2533.041mil|Location2.Y=2544.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2533.041mil|Location2.Y=2544.291mil|Absolute=True">Silk To Silk Clearance Constraint: (5mil &lt; 10mil) Between Text "Autoreset Enabled - Short 1 &amp; 2" (2760mil,2538.666mil) on Top Overlay And Track (2750mil,2450mil)(2750mil,2850mil) on Top Overlay Silk Text to Silk Clearance [5mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1717.528mil|Location2.X=1728.778mil|Location1.Y=1609.372mil|Location2.Y=1620.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1717.528mil|Location2.X=1728.778mil|Location1.Y=1609.372mil|Location2.Y=1620.622mil|Absolute=True">Silk To Silk Clearance Constraint: (3.012mil &lt; 10mil) Between Text "C3" (1663mil,1620mil) on Top Overlay And Text "IC5" (1650.016mil,1570.006mil) on Top Overlay Silk Text to Silk Clearance [3.012mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1367.844mil|Location2.X=1375.511mil|Location1.Y=2581.16mil|Location2.Y=2588.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1367.844mil|Location2.X=1375.511mil|Location1.Y=2581.16mil|Location2.Y=2588.827mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "C30" (1351.684mil,2545.006mil) on Top Overlay And Track (1060mil,2585mil)(1805mil,2585mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1529.509mil|Location2.X=1537.175mil|Location1.Y=2581.16mil|Location2.Y=2588.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1529.509mil|Location2.X=1537.175mil|Location1.Y=2581.16mil|Location2.Y=2588.827mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "C31" (1513.348mil,2545.006mil) on Top Overlay And Track (1060mil,2585mil)(1805mil,2585mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2990.214mil|Location2.X=3001.464mil|Location1.Y=1237.707mil|Location2.Y=1248.957mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2990.214mil|Location2.X=3001.464mil|Location1.Y=1237.707mil|Location2.Y=1248.957mil|Absolute=True">Silk To Silk Clearance Constraint: (6.463mil &lt; 10mil) Between Text "C34" (3001.684mil,1240.006mil) on Top Overlay And Text "J1" (2943.342mil,1200.006mil) on Top Overlay Silk Text to Silk Clearance [6.463mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3666.16mil|Location2.Y=3673.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3666.16mil|Location2.Y=3673.827mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "C37" (4526.684mil,3630.006mil) on Top Overlay And Track (4619.291mil,3225mil)(4619.291mil,3925mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4542.854mil|Location2.X=4550.52mil|Location1.Y=1776.16mil|Location2.Y=1783.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4542.854mil|Location2.X=4550.52mil|Location1.Y=1776.16mil|Location2.Y=1783.827mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "C41" (4538.348mil,1740.006mil) on Top Overlay And Text "R14" (4525.016mil,1775.006mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3286.167mil|Location2.Y=3293.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3286.167mil|Location2.Y=3293.833mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "DHT11" (4650mil,3290mil) on Top Overlay And Track (4619.291mil,3225mil)(4619.291mil,3925mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3288.469mil|Location2.Y=3299.719mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3288.469mil|Location2.Y=3299.719mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "DHT11" (4650mil,3290mil) on Top Overlay And Track (4662.047mil,3294.095mil)(4662.047mil,3605.905mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3288.469mil|Location2.Y=3299.719mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3288.469mil|Location2.Y=3299.719mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "DHT11" (4650mil,3290mil) on Top Overlay And Track (4662.047mil,3294.095mil)(4767.953mil,3294.095mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.899mil|Location2.X=2079.566mil|Location1.Y=3455.453mil|Location2.Y=3463.119mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.899mil|Location2.X=2079.566mil|Location1.Y=3455.453mil|Location2.Y=3463.119mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "from 16MHz to 10MHz), *Replace Y2 (change from 16MHz to 8MHz)." (1050mil,3459.286mil) on Top Overlay And Track (2075mil,3200mil)(2075mil,3750mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2103.214mil|Location2.X=2110.881mil|Location1.Y=3470.329mil|Location2.Y=3477.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2103.214mil|Location2.X=2110.881mil|Location1.Y=3470.329mil|Location2.Y=3477.996mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "from 16MHz to 10MHz), *Replace Y2 (change from 16MHz to 8MHz)." (1050mil,3459.286mil) on Top Overlay And Track (2107.047mil,3399.095mil)(2107.047mil,3710.905mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3533.546mil|Location2.X=3544.796mil|Location1.Y=1172.668mil|Location2.Y=1183.918mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3533.546mil|Location2.X=3544.796mil|Location1.Y=1172.668mil|Location2.Y=1183.918mil|Absolute=True">Silk To Silk Clearance Constraint: (2.413mil &lt; 10mil) Between Text "GND" (3538.046mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [2.413mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3634.379mil|Location2.X=3645.629mil|Location1.Y=1172.668mil|Location2.Y=1183.918mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3634.379mil|Location2.X=3645.629mil|Location1.Y=1172.668mil|Location2.Y=1183.918mil|Absolute=True">Silk To Silk Clearance Constraint: (2.414mil &lt; 10mil) Between Text "GND" (3638.879mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [2.414mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=1668.369mil|Location2.Y=1679.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=1668.369mil|Location2.Y=1679.619mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.886mil,1655.288mil) on Top Overlay And Track (4767.953mil,1414.094mil)(4767.953mil,1725.906mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=2133.369mil|Location2.Y=2144.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=2133.369mil|Location2.Y=2144.619mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.886mil,2120.288mil) on Top Overlay And Track (4767.953mil,1884.094mil)(4767.953mil,2195.905mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3073.369mil|Location2.Y=3084.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3073.369mil|Location2.Y=3084.619mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.886mil,3060.288mil) on Top Overlay And Track (4767.953mil,2824.095mil)(4767.953mil,3135.905mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3910.869mil|Location2.Y=3922.119mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3910.869mil|Location2.Y=3922.119mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.886mil,3897.788mil) on Top Overlay And Track (4767.953mil,3764.095mil)(4767.953mil,4175.905mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=2603.369mil|Location2.Y=2614.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=2603.369mil|Location2.Y=2614.619mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.887mil,2590.288mil) on Top Overlay And Track (4767.953mil,2354.095mil)(4767.953mil,2665.905mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3543.369mil|Location2.Y=3554.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4769.395mil|Location2.X=4780.645mil|Location1.Y=3543.369mil|Location2.Y=3554.619mil|Absolute=True">Silk To Silk Clearance Constraint: (6.261mil &lt; 10mil) Between Text "GND" (4791.887mil,3530.288mil) on Top Overlay And Track (4767.953mil,3294.095mil)(4767.953mil,3605.905mil) on Top Overlay Silk Text to Silk Clearance [6.261mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.672mil|Location2.X=1968.922mil|Location1.Y=2366.039mil|Location2.Y=2377.289mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1957.672mil|Location2.X=1968.922mil|Location1.Y=2366.039mil|Location2.Y=2377.289mil|Absolute=True">Silk To Silk Clearance Constraint: (9.626mil &lt; 10mil) Between Text "IC2" (1855.016mil,2345.006mil) on Top Overlay And Track (1972.047mil,2364.095mil)(1972.047mil,2575.905mil) on Top Overlay Silk Text to Silk Clearance [9.626mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=3442.858mil|Location2.Y=3454.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=3442.858mil|Location2.Y=3454.108mil|Absolute=True">Silk To Silk Clearance Constraint: (2.127mil &lt; 10mil) Between Text "IO_2" (4791.886mil,3430.613mil) on Top Overlay And Track (4767.953mil,3294.095mil)(4767.953mil,3605.905mil) on Top Overlay Silk Text to Silk Clearance [2.127mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=2972.858mil|Location2.Y=2984.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=2972.858mil|Location2.Y=2984.108mil|Absolute=True">Silk To Silk Clearance Constraint: (2.127mil &lt; 10mil) Between Text "IO_3" (4791.887mil,2960.613mil) on Top Overlay And Track (4767.953mil,2824.095mil)(4767.953mil,3135.905mil) on Top Overlay Silk Text to Silk Clearance [2.127mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.123mil|Location2.X=4774.79mil|Location1.Y=2504.649mil|Location2.Y=2512.316mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.123mil|Location2.X=4774.79mil|Location1.Y=2504.649mil|Location2.Y=2512.316mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "IO_4" (4788.826mil,2490.613mil) on Top Overlay And Track (4767.953mil,2354.095mil)(4767.953mil,2665.905mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=2032.858mil|Location2.Y=2044.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=2032.858mil|Location2.Y=2044.108mil|Absolute=True">Silk To Silk Clearance Constraint: (2.127mil &lt; 10mil) Between Text "IO_5" (4791.887mil,2020.613mil) on Top Overlay And Track (4767.953mil,1884.094mil)(4767.953mil,2195.905mil) on Top Overlay Silk Text to Silk Clearance [2.127mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=1567.858mil|Location2.Y=1579.108mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4767.328mil|Location2.X=4778.578mil|Location1.Y=1567.858mil|Location2.Y=1579.108mil|Absolute=True">Silk To Silk Clearance Constraint: (2.127mil &lt; 10mil) Between Text "IO_6" (4791.887mil,1555.613mil) on Top Overlay And Track (4767.953mil,1414.094mil)(4767.953mil,1725.906mil) on Top Overlay Silk Text to Silk Clearance [2.127mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2630.729mil|Location2.Y=2641.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2751.875mil|Location2.X=2763.125mil|Location1.Y=2630.729mil|Location2.Y=2641.979mil|Absolute=True">Silk To Silk Clearance Constraint: (5mil &lt; 10mil) Between Text "JP1 - RESET MODE" (2760mil,2620.814mil) on Top Overlay And Track (2750mil,2450mil)(2750mil,2850mil) on Top Overlay Silk Text to Silk Clearance [5mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2835.179mil|Location2.X=2846.429mil|Location1.Y=3540.189mil|Location2.Y=3551.439mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2835.179mil|Location2.X=2846.429mil|Location1.Y=3540.189mil|Location2.Y=3551.439mil|Absolute=True">Silk To Silk Clearance Constraint: (8.391mil &lt; 10mil) Between Text "JP5 -PULL DOWN OE" (2257.559mil,3545.814mil) on Top Overlay And Track (2850mil,3200mil)(2850mil,3750mil) on Top Overlay Silk Text to Silk Clearance [8.391mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3919.455mil|Location2.Y=3927.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.458mil|Location2.X=4623.125mil|Location1.Y=3919.455mil|Location2.Y=3927.121mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "LCD" (4649.186mil,3915mil) on Top Overlay And Track (4619.291mil,3225mil)(4619.291mil,3925mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3961.471mil|Location2.Y=3972.721mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4648.43mil|Location2.X=4659.68mil|Location1.Y=3961.471mil|Location2.Y=3972.721mil|Absolute=True">Silk To Silk Clearance Constraint: (8.11mil &lt; 10mil) Between Text "LCD" (4649.186mil,3915mil) on Top Overlay And Track (4662.047mil,3764.095mil)(4662.047mil,4175.905mil) on Top Overlay Silk Text to Silk Clearance [8.11mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3040.879mil|Location2.X=3048.545mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3040.879mil|Location2.X=3048.545mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "NC" (3044.712mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3735.879mil|Location2.X=3743.545mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3735.879mil|Location2.X=3743.545mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "NC" (3739.712mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.851mil|Location2.X=3830.517mil|Location1.Y=2291.521mil|Location2.Y=2299.188mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.851mil|Location2.X=3830.517mil|Location1.Y=2291.521mil|Location2.Y=2299.188mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "R20" (3826.684mil,2280.006mil) on Top Overlay And Track (3627.716mil,2295.354mil)(4100.158mil,2295.354mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1800.297mil|Location2.X=1811.547mil|Location1.Y=2571.126mil|Location2.Y=2582.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1800.297mil|Location2.X=1811.547mil|Location1.Y=2571.126mil|Location2.Y=2582.376mil|Absolute=True">Silk To Silk Clearance Constraint: (6.6mil &lt; 10mil) Between Text "R4" (1806.678mil,2530.006mil) on Top Overlay And Track (1060mil,2585mil)(1805mil,2585mil) on Top Overlay Silk Text to Silk Clearance [6.6mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1800.297mil|Location2.X=1811.547mil|Location1.Y=2571.126mil|Location2.Y=2582.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1800.297mil|Location2.X=1811.547mil|Location1.Y=2571.126mil|Location2.Y=2582.376mil|Absolute=True">Silk To Silk Clearance Constraint: (6.6mil &lt; 10mil) Between Text "R4" (1806.678mil,2530.006mil) on Top Overlay And Track (1805mil,2585mil)(1805mil,3055mil) on Top Overlay Silk Text to Silk Clearance [6.6mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3231.712mil|Location2.X=3239.379mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3231.712mil|Location2.X=3239.379mil|Location1.Y=1171.455mil|Location2.Y=1179.121mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 10mil) Between Text "RES" (3235.545mil,1175.288mil) on Top Overlay And Track (2970.236mil,1173.15mil)(3799.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4424.244mil|Location2.X=4435.494mil|Location1.Y=1172.053mil|Location2.Y=1183.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4424.244mil|Location2.X=4435.494mil|Location1.Y=1172.053mil|Location2.Y=1183.303mil|Absolute=True">Silk To Silk Clearance Constraint: (1.184mil &lt; 10mil) Between Text "SCL" (4429.712mil,1175.288mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.184mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4768.833mil|Location2.X=4780.083mil|Location1.Y=4013.396mil|Location2.Y=4024.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4768.833mil|Location2.X=4780.083mil|Location1.Y=4013.396mil|Location2.Y=4024.646mil|Absolute=True">Silk To Silk Clearance Constraint: (5.136mil &lt; 10mil) Between Text "SCL" (4791.886mil,4000.288mil) on Top Overlay And Track (4767.953mil,3764.095mil)(4767.953mil,4175.905mil) on Top Overlay Silk Text to Silk Clearance [5.136mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4325.244mil|Location2.X=4336.494mil|Location1.Y=1172.053mil|Location2.Y=1183.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4325.244mil|Location2.X=4336.494mil|Location1.Y=1172.053mil|Location2.Y=1183.303mil|Absolute=True">Silk To Silk Clearance Constraint: (1.184mil &lt; 10mil) Between Text "SDA" (4330.712mil,1175.288mil) on Top Overlay And Track (3860.236mil,1173.15mil)(4489.764mil,1173.15mil) on Top Overlay Silk Text to Silk Clearance [1.184mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4768.833mil|Location2.X=4780.083mil|Location1.Y=4113.395mil|Location2.Y=4124.645mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4768.833mil|Location2.X=4780.083mil|Location1.Y=4113.395mil|Location2.Y=4124.645mil|Absolute=True">Silk To Silk Clearance Constraint: (5.136mil &lt; 10mil) Between Text "SDA" (4791.886mil,4100.288mil) on Top Overlay And Track (4767.953mil,3764.095mil)(4767.953mil,4175.905mil) on Top Overlay Silk Text to Silk Clearance [5.136mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1229.672mil|Location2.X=1240.922mil|Location1.Y=4423.686mil|Location2.Y=4434.936mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1229.672mil|Location2.X=1240.922mil|Location1.Y=4423.686mil|Location2.Y=4434.936mil|Absolute=True">Silk To Silk Clearance Constraint: (9.742mil &lt; 10mil) Between Text "SW2" (1192mil,4437mil) on Top Overlay And Track (1238.78mil,4328.701mil)(1238.78mil,4421.221mil) on Top Overlay Silk Text to Silk Clearance [9.742mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1253.02mil|Location2.X=1264.27mil|Location1.Y=4423.704mil|Location2.Y=4434.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1253.02mil|Location2.X=1264.27mil|Location1.Y=4423.704mil|Location2.Y=4434.954mil|Absolute=True">Silk To Silk Clearance Constraint: (8.342mil &lt; 10mil) Between Text "SW2" (1192mil,4437mil) on Top Overlay And Track (1238.78mil,4421.221mil)(1711.22mil,4421.221mil) on Top Overlay Silk Text to Silk Clearance [8.342mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1094.879mil|Location2.X=1106.129mil|Location1.Y=1614.499mil|Location2.Y=1625.749mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\PXL\ElektronischeSystemen\ES2\GrondPCB\Greenhouse\Greenhouse.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1094.879mil|Location2.X=1106.129mil|Location1.Y=1614.499mil|Location2.Y=1625.749mil|Absolute=True">Silk To Silk Clearance Constraint: (8.783mil &lt; 10mil) Between Text "VR1" (1034.337mil,1628.002mil) on Top Overlay And Track (1100mil,1588.189mil)(1100mil,1611.811mil) on Top Overlay Silk Text to Silk Clearance [8.783mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

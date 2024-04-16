@@ -1,0 +1,25 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: Greenhouse_v2.GBR   10/04/2024  14:24:50
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.gbr                Top Layer                               
+.gbr                Bottom Layer                            
+.gbr                Top Overlay                             
+.gbr                Bottom Overlay                          
+.gbr                Top Solder                              
+.gbr                Bottom Solder                           
+.gbr                Top Paste                               
+.gbr                Bottom Paste                            
+.gbr                Mechanical 1                            
+.gbr                Top Component Outline                   
+.gbr                Top Designator                          
+.gbr                Profile                                 
+.gbr                Non-plated through-hole drill file      
+.gbr                Plated through-hole drill file          
+.gbr                Drill Drawing                           
+.gbr                Drill Guide                             
+------------------------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [Greenhouse.PrjPcb]
+   Generated File[Greenhouse_v2_Copper_Signal_Top.gbr]
+   Generated File[Greenhouse_v2_Copper_Signal_Bot.gbr]
+   Generated File[Greenhouse_v2_Legend_Top.gbr]
+   Generated File[Greenhouse_v2_Legend_Bot.gbr]
+   Generated File[Greenhouse_v2_Soldermask_Top.gbr]
+   Generated File[Greenhouse_v2_Soldermask_Bot.gbr]
+   Generated File[Greenhouse_v2_Paste_Top.gbr]
+   Generated File[Greenhouse_v2_Paste_Bot.gbr]
+   Generated File[Greenhouse_v2_Mechanical_1.gbr]
+   Generated File[Greenhouse_v2_Top_Component_Outline.gbr]
+   Generated File[Greenhouse_v2_Top_Designator.gbr]
+   Generated File[Greenhouse_v2_Profile.gbr]
+   Generated File[Greenhouse_v2_NPTH_Drill.gbr]
+   Generated File[Greenhouse_v2_PTH_Drill.gbr]
+   Generated File[Greenhouse_v2_Drawing_1.gbr]
+   Generated File[Greenhouse_v2_Drillmap_1.gbr]
+   Generated File[Greenhouse_v2.EXTREP]
+   Generated File[Greenhouse_v2.REP]
+
+
+Files Generated   : 18
+Documents Printed : 0
+
+Finished Output Generation At 14:24:53 On 10/04/2024

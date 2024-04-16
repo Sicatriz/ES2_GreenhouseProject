@@ -1,0 +1,1363 @@
+Added Component: Designator=C1(WCAP-ASLI_D6.3H5.5)
+Add component (AddParameter): Name = "Capacitance"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/865080243007?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/865080243007?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "6.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "19%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "10uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "865080243007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ASLI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "240mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ASED055101M010DVCTBB000"; VariantName = "[No Variations]"
+Added Component: Designator=C2(WCAP-ASLI_D6.3H5.5)
+Add component (AddParameter): Name = "Capacitance"; Value = "100uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance Tolerance"; Value = "+/-20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Aluminum Electrolytic Capacitors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/865080243007?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/865080243007?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "6.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dissipation Factor"; Value = "19%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Endurance"; Value = "2000h"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = "10uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "865080243007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WCAP-ASLI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage (DC)"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = "240mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technical Reference"; Value = "ASED055101M010DVCTBB000"; VariantName = "[No Variations]"
+Added Component: Designator=D1(WL-SMCW_0805_150080xx75000)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Signal LEDs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Chip Technology"; Value = "InGaN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/150080GS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/150080GS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "525nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitting Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "450mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150080GS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WL-SMCW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "515nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=D2(WL-SMCW_0805_150080xx75000)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Signal LEDs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Chip Technology"; Value = "AlInGaP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "605nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitting Color"; Value = "Amber"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "130mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150080AS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WL-SMCW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "610nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=D3(WL-SMCW_0805_150080xx75000)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Signal LEDs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Chip Technology"; Value = "AlInGaP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "605nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitting Color"; Value = "Amber"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "130mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150080AS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WL-SMCW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "610nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=D4(WL-SMCW_0805_150080xx75000)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Signal LEDs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Chip Technology"; Value = "AlInGaP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/150080AS75000?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "605nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Emitting Color"; Value = "Amber"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "130mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "150080AS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WL-SMCW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "610nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "140°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Component: Designator=D5(SOD2512X110N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/bat54ht1g/on-semiconductor?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/BAT54HT1G.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "863-BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi/BAT54HT1G?qs=vLkC5FC1VN%252BK3ZQA%252ByHPIA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=D6(SOD2512X110N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/bat54ht1g/on-semiconductor?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/BAT54HT1G.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "863-BAT54HT1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi/BAT54HT1G?qs=vLkC5FC1VN%252BK3ZQA%252ByHPIA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=FB1(WE-CBF_0805_L2W1.2H0.9_HS/WB)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ferrites for PCB Assembly"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance Max"; Value = "0.35Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.9mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance @100MHz"; Value = "600Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max"; Value = "700Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max Test Condition"; Value = "150MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "74279204"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WE-CBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "1.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Wide Band"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.2mm"; VariantName = "[No Variations]"
+Added Component: Designator=FB2(WE-CBF_0805_L2W1.2H0.9_HS/WB)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ferrites for PCB Assembly"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance Max"; Value = "0.35Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.9mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance @100MHz"; Value = "600Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max"; Value = "700Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max Test Condition"; Value = "150MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "74279204"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WE-CBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "1.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Wide Band"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.2mm"; VariantName = "[No Variations]"
+Added Component: Designator=FB3(WE-CBF_0805_L2W1.2H0.9_HS/WB)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Ferrites for PCB Assembly"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/74279204?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance Max"; Value = "0.35Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.9mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance @100MHz"; Value = "600Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max"; Value = "700Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance Max Test Condition"; Value = "150MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "74279204"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WE-CBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "1.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Wide Band"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.2mm"; VariantName = "[No Variations]"
+Added Component: Designator=IC1(DIP794W53P254L3467H457Q28N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.ca/datasheet/2/268/ATmega48A_PA_88A_PA_168A_PA_328_P_DS_DS40002061B-3050139.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "4.572mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ATMEGA328P-PU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "556-ATMEGA328P-PU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATMEGA328P-PU?qs=K8BHR703ZXguOQv3sKbWcg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=IC2(QFP80P900X900X120-32N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ATMEGA16U2-AU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/atmega16u2-au/microchip-technology?region=europe"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.atmel.com/images/doc7799.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ATMEGA16U2-AU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "556-ATMEGA16U2-AU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/ATMEGA16U2-AU?qs=JV7lzlMm3yJerHSPc%2FAMcA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=IC4(SOIC127P600X175-14N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "TXS0104EDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/txs0104edr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/txs0104e"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.75mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TXS0104EDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-TXS0104EDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TXS0104EDR?qs=7kv20MEVUljeQYQBZTsYxg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J1(61300811821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300811821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300811821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300811821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J2(61300611821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300611821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300611821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300611821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J3(61300811821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300811821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300811821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300811821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J4(61301011821)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61301011821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61301011821?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Socket Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61301011821"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tray"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=J5(AMPHENOL_67997-106HLF)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/67997-106HLF/Amphenol+FCI/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol ICC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "67997-106HLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/67997-106HLF/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/67997-106HLF/Amphenol+FCI/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(Socket_Sense33)
+Added Component: Designator=J6(AMPHENOL_67997-106HLF)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/67997-106HLF/Amphenol+FCI/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Amphenol ICC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "67997-106HLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/67997-106HLF/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/67997-106HLF/Amphenol+FCI/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J7(629105150521)
+Add component (AddParameter): Name = "Application"; Value = "Micro USB 2.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Input/Output Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/629105150521?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/629105150521?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Receptacle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface Type"; Value = "Type B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "629105150521"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-USB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Ports"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Horizontal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "30V (AC)"; VariantName = "[No Variations]"
+Added Component: Designator=L1(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "CI160808-R10J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ci160808-r10j/bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CI160808-R10J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CI160808-R10J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CI160808-R10J?qs=uD%2FoUDWqfvSQYk45NmNjYw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=MH1(Mounting Hole)
+Added Component: Designator=MH2(Mounting Hole)
+Added Component: Designator=MH3(Mounting Hole)
+Added Component: Designator=MH4(Mounting Hole)
+Added Component: Designator=P1(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P2(61300421121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300421121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300421121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300421121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P3(61300411121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300411121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300411121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300411121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P4(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P5(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P6(61300411121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300411121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300411121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300411121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P7(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P8(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P9(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P10(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=P11(61300311121)
+Add component (AddParameter): Name = "Category"; Value = "Board-to-Board Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/61300311121?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Pin Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R15(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R16(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R21(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R22(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R23(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R24(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R25(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R26(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R27(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R28(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R29(RESC2012X50N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ac05000004707jac00/vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.vishay.com/docs/28730/acac-at.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AC05000004707JAC00"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "594-AC05W0R470J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Draloric/AC05000004707JAC00?qs=9EcTHFQkrt89eb2J9Rg7Vw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=SW1(4304x60437x6)
+Add component (AddParameter): Name = "Category"; Value = "Tact Switches"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Circuit"; Value = "SPST-NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/430456043736?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/430456043736?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Stainless Steel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "430456043736"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WS-TATV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operation Force"; Value = "360g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "50mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "12VDC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Material"; Value = "Copper Alloy"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Washable"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "12mm"; VariantName = "[No Variations]"
+Added Component: Designator=SW2(4304x60437x6)
+Add component (AddParameter): Name = "Category"; Value = "Tact Switches"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Circuit"; Value = "SPST-NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/430456043736?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/430456043736?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Stainless Steel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "4.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "430456043736"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WS-TATV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operation Force"; Value = "360g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "50mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "12VDC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Material"; Value = "Copper Alloy"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Washable"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "12mm"; VariantName = "[No Variations]"
+Added Component: Designator=U4(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/sn74ahc1g09dbvr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/sn74ahc1g09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHC1G09DBVR?qs=SMj%252Bbyv09TwoyWK2f6L9Mg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U5(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/sn74ahc1g09dbvr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/sn74ahc1g09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHC1G09DBVR?qs=SMj%252Bbyv09TwoyWK2f6L9Mg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U6(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/sn74ahc1g09dbvr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/sn74ahc1g09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHC1G09DBVR?qs=SMj%252Bbyv09TwoyWK2f6L9Mg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U7(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/sn74ahc1g09dbvr/texas-instruments?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/sn74ahc1g09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-SN74AHC1G09DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AHC1G09DBVR?qs=SMj%252Bbyv09TwoyWK2f6L9Mg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U?(DCQ0006A_M)
+Add component (AddParameter): Name = "Alternate_PartNumber"; Value = "TL1963ADCQT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Application_BuildNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "IC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DCQ0006A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "TL1963ADCQR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "TYPE"; VariantName = "[No Variations]"
+Added Component: Designator=VR1(VARC1608X55N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/cg0603mlc-05e/bourns?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.farnell.com/datasheets/1785244.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CG0603MLC-05E?qs=lDok7oSghXVLNKMK69q%252BFQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=VR2(VARC1608X55N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/cg0603mlc-05e/bourns?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.farnell.com/datasheets/1785244.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-CG0603MLC-05E"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/CG0603MLC-05E?qs=lDok7oSghXVLNKMK69q%252BFQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Y1(ABM7)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ABM7-16.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/abm7-16.000mhz-d2y-t/abracon?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://abracon.com/Resonators/abm7.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ABRACON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ABM7-16.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "815-ABM7-16-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ABRACON/ABM7-16.000MHZ-D2Y-T?qs=LoTOQoUkC8QdlhlqgnS4cw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Y2(ABM7)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ABM7-16.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/abm7-16.000mhz-d2y-t/abracon?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://abracon.com/Resonators/abm7.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "ABRACON"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ABM7-16.000MHZ-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "815-ABM7-16-D2Y-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/ABRACON/ABM7-16.000MHZ-D2Y-T?qs=LoTOQoUkC8QdlhlqgnS4cw%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3_16U2_UCAP Pin=IC2-27
+Added Pin To Net: NetName=+3V3_16U2_UCAP Pin=R26-1
+Added Net: Name=+3V3_16U2_UCAP
+Added Pin To Net: NetName=+3V3 Pin=J1-4
+Added Pin To Net: NetName=+3V3 Pin=P4-3
+Added Pin To Net: NetName=+3V3 Pin=R28-1
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5 Pin=C2-1
+Added Pin To Net: NetName=+5 Pin=IC2-31
+Added Pin To Net: NetName=+5 Pin=J1-5
+Added Pin To Net: NetName=+5 Pin=L1-2
+Added Pin To Net: NetName=+5 Pin=P4-1
+Added Pin To Net: NetName=+5 Pin=R27-2
+Added Net: Name=+5
+Added Pin To Net: NetName=+5V/3V3_16U2 Pin=FB1-2
+Added Pin To Net: NetName=+5V/3V3_16U2 Pin=IC2-4
+Added Pin To Net: NetName=+5V/3V3_16U2 Pin=IC2-32
+Added Pin To Net: NetName=+5V/3V3_16U2 Pin=R26-2
+Added Net: Name=+5V/3V3_16U2
+Added Pin To Net: NetName=+5V/3V3_328P_AVCC Pin=FB3-2
+Added Pin To Net: NetName=+5V/3V3_328P_AVCC Pin=IC1-20
+Added Net: Name=+5V/3V3_328P_AVCC
+Added Pin To Net: NetName=+5V/3V3_328P_VCC Pin=FB2-2
+Added Pin To Net: NetName=+5V/3V3_328P_VCC Pin=IC1-7
+Added Net: Name=+5V/3V3_328P_VCC
+Added Pin To Net: NetName=+5V/3V3 Pin=D5-1
+Added Pin To Net: NetName=+5V/3V3 Pin=D6-1
+Added Pin To Net: NetName=+5V/3V3 Pin=FB1-1
+Added Pin To Net: NetName=+5V/3V3 Pin=FB2-1
+Added Pin To Net: NetName=+5V/3V3 Pin=FB3-1
+Added Pin To Net: NetName=+5V/3V3 Pin=IC4-14
+Added Pin To Net: NetName=+5V/3V3 Pin=J1-2
+Added Pin To Net: NetName=+5V/3V3 Pin=J5-02
+Added Pin To Net: NetName=+5V/3V3 Pin=J6-02
+Added Pin To Net: NetName=+5V/3V3 Pin=P4-2
+Added Pin To Net: NetName=+5V/3V3 Pin=P6-1
+Added Pin To Net: NetName=+5V/3V3 Pin=P7-1
+Added Pin To Net: NetName=+5V/3V3 Pin=P8-1
+Added Pin To Net: NetName=+5V/3V3 Pin=P9-1
+Added Pin To Net: NetName=+5V/3V3 Pin=P10-1
+Added Pin To Net: NetName=+5V/3V3 Pin=P11-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R1-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R2-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R3-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R4-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R14-2
+Added Pin To Net: NetName=+5V/3V3 Pin=R15-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R17-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R18-2
+Added Pin To Net: NetName=+5V/3V3 Pin=R19-2
+Added Pin To Net: NetName=+5V/3V3 Pin=R20-2
+Added Pin To Net: NetName=+5V/3V3 Pin=R21-2
+Added Pin To Net: NetName=+5V/3V3 Pin=R27-1
+Added Pin To Net: NetName=+5V/3V3 Pin=R28-2
+Added Pin To Net: NetName=+5V/3V3 Pin=U4-5
+Added Pin To Net: NetName=+5V/3V3 Pin=U5-5
+Added Pin To Net: NetName=+5V/3V3 Pin=U6-5
+Added Pin To Net: NetName=+5V/3V3 Pin=U7-5
+Added Net: Name=+5V/3V3
+Added Pin To Net: NetName=+5V_USB Pin=C1-1
+Added Pin To Net: NetName=+5V_USB Pin=J7-1
+Added Pin To Net: NetName=+5V_USB Pin=L1-1
+Added Net: Name=+5V_USB
+Added Pin To Net: NetName=+AREF Pin=IC1-21
+Added Pin To Net: NetName=+AREF Pin=J4-8
+Added Net: Name=+AREF
+Added Pin To Net: NetName=16U2_16MHZ_XTAL1 Pin=IC2-1
+Added Pin To Net: NetName=16U2_16MHZ_XTAL1 Pin=R9-1
+Added Pin To Net: NetName=16U2_16MHZ_XTAL1 Pin=Y2-2
+Added Net: Name=16U2_16MHZ_XTAL1
+Added Pin To Net: NetName=16U2_16MHZ_XTAL2 Pin=IC2-2
+Added Pin To Net: NetName=16U2_16MHZ_XTAL2 Pin=R9-2
+Added Net: Name=16U2_16MHZ_XTAL2
+Added Pin To Net: NetName=16U2_BUF_RESETn Pin=R23-2
+Added Pin To Net: NetName=16U2_BUF_RESETn Pin=U5-1
+Added Pin To Net: NetName=16U2_BUF_RESETn Pin=U5-2
+Added Net: Name=16U2_BUF_RESETn
+Added Pin To Net: NetName=16U2_HDR_RESETn Pin=J6-05
+Added Pin To Net: NetName=16U2_HDR_RESETn Pin=P3-3
+Added Net: Name=16U2_HDR_RESETn
+Added Pin To Net: NetName=16U2_PB4 Pin=IC2-18
+Added Pin To Net: NetName=16U2_PB4 Pin=P2-1
+Added Pin To Net: NetName=16U2_PB4 Pin=P3-2
+Added Net: Name=16U2_PB4
+Added Pin To Net: NetName=16U2_PB5 Pin=IC2-19
+Added Pin To Net: NetName=16U2_PB5 Pin=P2-3
+Added Net: Name=16U2_PB5
+Added Pin To Net: NetName=16U2_PB6 Pin=IC2-20
+Added Pin To Net: NetName=16U2_PB6 Pin=P2-2
+Added Net: Name=16U2_PB6
+Added Pin To Net: NetName=16U2_PB7 Pin=IC2-21
+Added Pin To Net: NetName=16U2_PB7 Pin=P2-4
+Added Net: Name=16U2_PB7
+Added Pin To Net: NetName=16U2_RESETn Pin=IC2-24
+Added Pin To Net: NetName=16U2_RESETn Pin=P3-4
+Added Pin To Net: NetName=16U2_RESETn Pin=R4-2
+Added Pin To Net: NetName=16U2_RESETn Pin=U5-4
+Added Net: Name=16U2_RESETn
+Added Pin To Net: NetName=16U2_SCLK Pin=J6-03
+Added Pin To Net: NetName=16U2_SCLK Pin=R5-1
+Added Net: Name=16U2_SCLK
+Added Pin To Net: NetName=16U2PROG_328P_RESETn Pin=IC2-13
+Added Pin To Net: NetName=16U2PROG_328P_RESETn Pin=P1-2
+Added Pin To Net: NetName=16U2PROG_328P_RESETn Pin=R1-2
+Added Net: Name=16U2PROG_328P_RESETn
+Added Pin To Net: NetName=328P_16MHZ_XTAL1 Pin=IC1-9
+Added Pin To Net: NetName=328P_16MHZ_XTAL1 Pin=R16-2
+Added Net: Name=328P_16MHZ_XTAL1
+Added Pin To Net: NetName=328P_16MHZ_XTAL2 Pin=IC1-10
+Added Pin To Net: NetName=328P_16MHZ_XTAL2 Pin=R16-1
+Added Pin To Net: NetName=328P_16MHZ_XTAL2 Pin=Y1-2
+Added Net: Name=328P_16MHZ_XTAL2
+Added Pin To Net: NetName=328P_AUTORESETn Pin=R18-1
+Added Pin To Net: NetName=328P_AUTORESETn Pin=U6-1
+Added Net: Name=328P_AUTORESETn
+Added Pin To Net: NetName=328P_BUF_RESETn Pin=R24-2
+Added Pin To Net: NetName=328P_BUF_RESETn Pin=U6-2
+Added Net: Name=328P_BUF_RESETn
+Added Pin To Net: NetName=328P_RESETn Pin=IC1-1
+Added Pin To Net: NetName=328P_RESETn Pin=J1-3
+Added Pin To Net: NetName=328P_RESETn Pin=J5-05
+Added Pin To Net: NetName=328P_RESETn Pin=P3-1
+Added Pin To Net: NetName=328P_RESETn Pin=R14-1
+Added Pin To Net: NetName=328P_RESETn Pin=U6-4
+Added Net: Name=328P_RESETn
+Added Pin To Net: NetName=AD0 Pin=IC1-23
+Added Pin To Net: NetName=AD0 Pin=J2-1
+Added Net: Name=AD0
+Added Pin To Net: NetName=AD1 Pin=IC1-24
+Added Pin To Net: NetName=AD1 Pin=J2-2
+Added Net: Name=AD1
+Added Pin To Net: NetName=AD2 Pin=IC1-25
+Added Pin To Net: NetName=AD2 Pin=J2-3
+Added Net: Name=AD2
+Added Pin To Net: NetName=AD3 Pin=IC1-26
+Added Pin To Net: NetName=AD3 Pin=J2-4
+Added Net: Name=AD3
+Added Pin To Net: NetName=AD4/SDA Pin=IC1-27
+Added Pin To Net: NetName=AD4/SDA Pin=J2-5
+Added Pin To Net: NetName=AD4/SDA Pin=J4-9
+Added Pin To Net: NetName=AD4/SDA Pin=P6-4
+Added Net: Name=AD4/SDA
+Added Pin To Net: NetName=AD5/SCL Pin=IC1-28
+Added Pin To Net: NetName=AD5/SCL Pin=J2-6
+Added Pin To Net: NetName=AD5/SCL Pin=J4-10
+Added Pin To Net: NetName=AD5/SCL Pin=P6-3
+Added Net: Name=AD5/SCL
+Added Pin To Net: NetName=BUTTON_RESETn Pin=D6-2
+Added Pin To Net: NetName=BUTTON_RESETn Pin=R20-1
+Added Pin To Net: NetName=BUTTON_RESETn Pin=R24-1
+Added Pin To Net: NetName=BUTTON_RESETn Pin=SW1-B1
+Added Pin To Net: NetName=BUTTON_RESETn Pin=SW1-B2
+Added Net: Name=BUTTON_RESETn
+Added Pin To Net: NetName=CON_USB_N Pin=IC2-30
+Added Pin To Net: NetName=CON_USB_N Pin=J7-2
+Added Pin To Net: NetName=CON_USB_N Pin=R6-1
+Added Pin To Net: NetName=CON_USB_N Pin=R6-2
+Added Pin To Net: NetName=CON_USB_N Pin=VR1-2
+Added Net: Name=CON_USB_N
+Added Pin To Net: NetName=CON_USB_P Pin=IC2-29
+Added Pin To Net: NetName=CON_USB_P Pin=J7-3
+Added Pin To Net: NetName=CON_USB_P Pin=R7-1
+Added Pin To Net: NetName=CON_USB_P Pin=R7-2
+Added Pin To Net: NetName=CON_USB_P Pin=VR2-2
+Added Net: Name=CON_USB_P
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=IC1-8
+Added Pin To Net: NetName=GND Pin=IC1-22
+Added Pin To Net: NetName=GND Pin=IC2-3
+Added Pin To Net: NetName=GND Pin=IC2-28
+Added Pin To Net: NetName=GND Pin=IC4-7
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J1-7
+Added Pin To Net: NetName=GND Pin=J4-7
+Added Pin To Net: NetName=GND Pin=J5-06
+Added Pin To Net: NetName=GND Pin=J6-6
+Added Pin To Net: NetName=GND Pin=J6-6
+Added Pin To Net: NetName=GND Pin=J6-06
+Added Pin To Net: NetName=GND Pin=J7-5
+Added Pin To Net: NetName=GND Pin=J7-Shell
+Added Pin To Net: NetName=GND Pin=J7-Shell
+Added Pin To Net: NetName=GND Pin=J7-Shell
+Added Pin To Net: NetName=GND Pin=J7-Shell
+Added Pin To Net: NetName=GND Pin=P6-2
+Added Pin To Net: NetName=GND Pin=P7-3
+Added Pin To Net: NetName=GND Pin=P8-3
+Added Pin To Net: NetName=GND Pin=P9-3
+Added Pin To Net: NetName=GND Pin=P10-3
+Added Pin To Net: NetName=GND Pin=P11-3
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R29-1
+Added Pin To Net: NetName=GND Pin=SW1-A1
+Added Pin To Net: NetName=GND Pin=SW1-A2
+Added Pin To Net: NetName=GND Pin=SW2-A1
+Added Pin To Net: NetName=GND Pin=SW2-A2
+Added Pin To Net: NetName=GND Pin=U4-3
+Added Pin To Net: NetName=GND Pin=U5-3
+Added Pin To Net: NetName=GND Pin=U6-3
+Added Pin To Net: NetName=GND Pin=U7-3
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-6
+Added Pin To Net: NetName=GND Pin=VR1-1
+Added Pin To Net: NetName=GND Pin=VR2-1
+Added Net: Name=GND
+Added Pin To Net: NetName=IO0 Pin=IC1-2
+Added Pin To Net: NetName=IO0 Pin=IC4-13
+Added Pin To Net: NetName=IO0 Pin=J3-1
+Added Pin To Net: NetName=IO0 Pin=R10-2
+Added Net: Name=IO0
+Added Pin To Net: NetName=IO1 Pin=IC1-3
+Added Pin To Net: NetName=IO1 Pin=IC4-12
+Added Pin To Net: NetName=IO1 Pin=J3-2
+Added Pin To Net: NetName=IO1 Pin=R11-2
+Added Net: Name=IO1
+Added Pin To Net: NetName=IO2 Pin=IC1-4
+Added Pin To Net: NetName=IO2 Pin=J3-3
+Added Pin To Net: NetName=IO2 Pin=P7-2
+Added Net: Name=IO2
+Added Pin To Net: NetName=IO3 Pin=IC1-5
+Added Pin To Net: NetName=IO3 Pin=J3-4
+Added Pin To Net: NetName=IO3 Pin=P8-2
+Added Net: Name=IO3
+Added Pin To Net: NetName=IO4 Pin=IC1-6
+Added Pin To Net: NetName=IO4 Pin=J3-5
+Added Pin To Net: NetName=IO4 Pin=P9-2
+Added Net: Name=IO4
+Added Pin To Net: NetName=IO5 Pin=IC1-11
+Added Pin To Net: NetName=IO5 Pin=J3-6
+Added Pin To Net: NetName=IO5 Pin=P10-2
+Added Net: Name=IO5
+Added Pin To Net: NetName=IO6 Pin=IC1-12
+Added Pin To Net: NetName=IO6 Pin=J3-7
+Added Pin To Net: NetName=IO6 Pin=P11-2
+Added Net: Name=IO6
+Added Pin To Net: NetName=IO7 Pin=IC1-13
+Added Pin To Net: NetName=IO7 Pin=J3-8
+Added Net: Name=IO7
+Added Pin To Net: NetName=IO8 Pin=IC1-14
+Added Pin To Net: NetName=IO8 Pin=IC4-11
+Added Pin To Net: NetName=IO8 Pin=J4-1
+Added Pin To Net: NetName=IO8 Pin=R22-2
+Added Net: Name=IO8
+Added Pin To Net: NetName=IO9 Pin=IC1-15
+Added Pin To Net: NetName=IO9 Pin=IC4-10
+Added Pin To Net: NetName=IO9 Pin=J4-2
+Added Net: Name=IO9
+Added Pin To Net: NetName=MISO Pin=IC1-18
+Added Pin To Net: NetName=MISO Pin=J4-5
+Added Pin To Net: NetName=MISO Pin=J5-01
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI Pin=IC1-17
+Added Pin To Net: NetName=MOSI Pin=J4-4
+Added Pin To Net: NetName=MOSI Pin=J5-04
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NetC11_1 Pin=P1-1
+Added Net: Name=NetC11_1
+Added Pin To Net: NetName=NetC12_2 Pin=U?-1
+Added Pin To Net: NetName=NetC12_2 Pin=U?-2
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=NetC13_2 Pin=U?-4
+Added Pin To Net: NetName=NetC13_2 Pin=U?-5
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetC36_1 Pin=IC4-1
+Added Pin To Net: NetName=NetC36_1 Pin=J6-1
+Added Net: Name=NetC36_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R17-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=U4-4
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=R15-2
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=IC2-11
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=R2-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=IC2-10
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD4_2 Pin=R3-2
+Added Net: Name=NetD4_2
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=R19-1
+Added Pin To Net: NetName=NetD5_2 Pin=R23-1
+Added Net: Name=NetD5_2
+Added Pin To Net: NetName=NetIC2_8 Pin=IC2-8
+Added Pin To Net: NetName=NetIC2_8 Pin=R11-1
+Added Net: Name=NetIC2_8
+Added Pin To Net: NetName=NetIC2_9 Pin=IC2-9
+Added Pin To Net: NetName=NetIC2_9 Pin=R10-1
+Added Net: Name=NetIC2_9
+Added Pin To Net: NetName=NetIC2_15 Pin=IC2-15
+Added Pin To Net: NetName=NetIC2_15 Pin=R5-2
+Added Net: Name=NetIC2_15
+Added Pin To Net: NetName=NetIC2_16 Pin=IC2-16
+Added Pin To Net: NetName=NetIC2_16 Pin=J6-04
+Added Net: Name=NetIC2_16
+Added Pin To Net: NetName=NetIC2_17 Pin=IC2-17
+Added Pin To Net: NetName=NetIC2_17 Pin=J6-01
+Added Net: Name=NetIC2_17
+Added Pin To Net: NetName=NetIC4_2 Pin=IC4-2
+Added Pin To Net: NetName=NetIC4_2 Pin=J6-2
+Added Net: Name=NetIC4_2
+Added Pin To Net: NetName=NetIC4_3 Pin=IC4-3
+Added Pin To Net: NetName=NetIC4_3 Pin=J6-3
+Added Net: Name=NetIC4_3
+Added Pin To Net: NetName=NetIC4_4 Pin=IC4-4
+Added Pin To Net: NetName=NetIC4_4 Pin=J6-4
+Added Net: Name=NetIC4_4
+Added Pin To Net: NetName=NetIC4_5 Pin=IC4-5
+Added Pin To Net: NetName=NetIC4_5 Pin=J6-5
+Added Net: Name=NetIC4_5
+Added Pin To Net: NetName=NetIC4_8 Pin=IC4-8
+Added Pin To Net: NetName=NetIC4_8 Pin=P5-1
+Added Net: Name=NetIC4_8
+Added Pin To Net: NetName=NetJ7_4 Pin=J7-4
+Added Pin To Net: NetName=NetJ7_4 Pin=R8-2
+Added Net: Name=NetJ7_4
+Added Pin To Net: NetName=NetP1_3 Pin=P1-3
+Added Pin To Net: NetName=NetP1_3 Pin=R12-2
+Added Net: Name=NetP1_3
+Added Pin To Net: NetName=NetP5_2 Pin=P5-2
+Added Pin To Net: NetName=NetP5_2 Pin=R29-2
+Added Net: Name=NetP5_2
+Added Pin To Net: NetName=NetR22_1 Pin=R22-1
+Added Pin To Net: NetName=NetR22_1 Pin=U7-4
+Added Net: Name=NetR22_1
+Added Pin To Net: NetName=SCK_R Pin=IC1-19
+Added Pin To Net: NetName=SCK_R Pin=R13-1
+Added Net: Name=SCK_R
+Added Pin To Net: NetName=SCK Pin=J4-6
+Added Pin To Net: NetName=SCK Pin=J5-03
+Added Pin To Net: NetName=SCK Pin=R13-2
+Added Pin To Net: NetName=SCK Pin=U4-1
+Added Pin To Net: NetName=SCK Pin=U4-2
+Added Net: Name=SCK
+Added Pin To Net: NetName=SS Pin=IC1-16
+Added Pin To Net: NetName=SS Pin=J4-3
+Added Net: Name=SS
+Added Pin To Net: NetName=USER_BUTTON_BUF Pin=R25-2
+Added Pin To Net: NetName=USER_BUTTON_BUF Pin=U7-1
+Added Pin To Net: NetName=USER_BUTTON_BUF Pin=U7-2
+Added Net: Name=USER_BUTTON_BUF
+Added Pin To Net: NetName=USER_BUTTON Pin=R21-1
+Added Pin To Net: NetName=USER_BUTTON Pin=R25-1
+Added Pin To Net: NetName=USER_BUTTON Pin=SW2-B1
+Added Pin To Net: NetName=USER_BUTTON Pin=SW2-B2
+Added Net: Name=USER_BUTTON
+Added Class: Name=Uno

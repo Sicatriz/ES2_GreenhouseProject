@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=CON_USB_P Pin=IC2-29
+Removed Pin From Net: NetName=CON_USB_N Pin=IC2-30
+Removed Pin From Net: NetName=CON_USB_N Pin=R6-2
+Removed Pin From Net: NetName=CON_USB_P Pin=R7-2
+Added Pin To Net: NetName=USB_N Pin=IC2-30
+Added Pin To Net: NetName=USB_N Pin=R6-2
+Added Net: Name=USB_N
+Added Pin To Net: NetName=USB_P Pin=IC2-29
+Added Pin To Net: NetName=USB_P Pin=R7-2
+Added Net: Name=USB_P
+Added Member To Class: ClassName=Uno Member=Component J7 MicroUSB

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=MH1-2
+Removed Pin From Net: NetName=GND Pin=MH2-2
+Removed Pin From Net: NetName=GND Pin=MH3-2
+Removed Pin From Net: NetName=GND Pin=MH4-2
+Removed Pin From Net: NetName=GND Pin=MS1-2
+Removed Pin From Net: NetName=GND Pin=MS2-2
+Change Component Comment : Designator=MH1 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH2 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH3 Old Comment= New Comment=MountingHole
+Change Component Comment : Designator=MH4 Old Comment= New Comment=MountingHole
+Add Pin To Net: Unknown Pin: Pin MH1-1
+Add Pin To Net: Unknown Pin: Pin MH2-1
+Add Pin To Net: Unknown Pin: Pin MH3-1
+Add Pin To Net: Unknown Pin: Pin MH4-1
+Add Pin To Net: Unknown Pin: Pin MS1-1
+Add Pin To Net: Unknown Pin: Pin MS2-1

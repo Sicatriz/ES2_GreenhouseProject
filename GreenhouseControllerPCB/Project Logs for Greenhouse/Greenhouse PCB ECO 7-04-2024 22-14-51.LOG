@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=16U2_16MHZ_XTAL2 Pin=Y2-1
+Removed Pin From Net: NetName=16U2_16MHZ_XTAL1 Pin=Y2-2
+Add Pin To Net: Unknown Pin: Pin MH1-1
+Add Pin To Net: Unknown Pin: Pin MH2-1
+Add Pin To Net: Unknown Pin: Pin MH3-1
+Add Pin To Net: Unknown Pin: Pin MH4-1
+Add Pin To Net: Unknown Pin: Pin MS1-1
+Add Pin To Net: Unknown Pin: Pin MS2-1
+Added Pin To Net: NetName=16U2_16MHZ_XTAL1 Pin=Y2-1
+Added Pin To Net: NetName=16U2_16MHZ_XTAL2 Pin=Y2-2
