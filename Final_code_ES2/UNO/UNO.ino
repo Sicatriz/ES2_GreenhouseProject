@@ -4,12 +4,18 @@
 
 #define DATALINE_PIN 2
 #define INVERTED 1
+#define BUTTON_PIN 8
 
 String VWC;   //volumetric water content
 String EC;    // electrical conductivity
 String TEMP;  // temperature
 char X='+';
 char *FTEvalue=new char[20];
+int buttonState = 0;
+float VWCvalue = 0;
+int lastState = HIGH; // the previous state from the input pin
+int currentState;    // the current reading from the input pin
+
 
 String Message = "";
 String temperature = "0";
@@ -35,7 +41,8 @@ char* get_measurement(){
 void setup() {
   sdi_serial_connection.begin(); // start our SDI connection 
   Serial.begin(9600); // Initialize the Serial communication at 9600 baud rate
-  
+  pinMode(BUTTON_PIN, INPUT);
+
   lcd.init(); //initialize the lcd
   lcd.backlight(); //open the backlight 
   lcd.clear();
@@ -45,7 +52,32 @@ void setup() {
 }
 
 void loop() {
+  currentState = digitalRead(BUTTON_PIN);
+  if (currentState == HIGH && lastState == LOW) {
+    // If the input goes HIGH and the previous state was LOW, change to HIGH
+    lastState = HIGH;
+  } else if (currentState == LOW && lastState == HIGH) {
+    // If the input goes LOW and the previous state was HIGH, change to LOW
+    screenState++;
+
+    lastState = LOW;
+  }
+
+  if(screenState == 7)
+  {
+    screenState = 0;
+  }
+
   
+    /*
+    screenState++;
+    if(screenState == 6)
+    {
+      screenState = 0;
+    }
+    */
+
+
   if (Serial.available()) { // Check if data is available to read
     char receivedChar = Serial.read(); // Read the incoming byte
     Message += receivedChar;
@@ -87,7 +119,7 @@ void loop() {
       EC = FTE.substring(7, 11);
       TEMP = FTE.substring(12, 17);
     }
-    float VWCvalue = VWC.toInt() / 100.0;
+    VWCvalue = VWC.toInt() / 100.0;
     //lcd.clear();
     //lcd.print("got vwc");
 
@@ -152,83 +184,77 @@ void loop() {
 
 
     }
-
     switch(screenState)
-      {
-        case 0:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print("Temperature:");
-          lcd.setCursor(0, 1);
-          lcd.print(temperature);
-        break;
-        case 1:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print("Humidity:");
-          lcd.setCursor(0, 1);
-          lcd.print(humidity);
-        break;
-        case 2:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print("Pressure:");
-          lcd.setCursor(0, 1);
-          lcd.print(pressure);
-        break;
-        case 3:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print("IMU: x ");
-          lcd.print(imu_x);
-
-          lcd.setCursor(0, 1);
-          lcd.print(" y ");
-          lcd.print(imu_y);
-          lcd.print(" z ");
-          lcd.print(imu_z);
-
-        break;
-        case 4:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print("Color: r ");
-          lcd.print(color_r);
-
-          lcd.setCursor(0, 1);
-          lcd.print(" g ");
-          lcd.print(color_g);
-          lcd.print(" b ");
-          lcd.print(color_b);
-
-        break;
-        case 5:
-          lcd.clear();                 // clear display
-          lcd.setCursor(0, 0);         // move cursor to   (0, 0)
-          lcd.print("VWC1 = ");        // print message at (0, 0)
-          lcd.setCursor(7, 0);
-          lcd.print(VWCvalue);
-          lcd.setCursor(0, 1);
-          lcd.print("EC = ");
-          lcd.setCursor(5, 1);
-          lcd.print(EC);
-          lcd.setCursor(12, 0);
-          lcd.print("Temp");
-          lcd.setCursor(12, 1);
-          lcd.print(TEMP);
-        break;
-       
-        default:
-          return 0;
-        break;
-      }
-    delay(2000);
-    screenState++;
-    if(screenState == 6)
     {
-      screenState = 0;
+      case 0:
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Temperature:");
+        lcd.setCursor(0, 1);
+        lcd.print(temperature);
+      break;
+      case 1:
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Humidity:");
+        lcd.setCursor(0, 1);
+        lcd.print(humidity);
+      break;
+      case 2:
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Pressure:");
+        lcd.setCursor(0, 1);
+        lcd.print(pressure);
+      break;
+      case 3:
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("IMU: x ");
+        lcd.print(imu_x);
+
+        lcd.setCursor(0, 1);
+        lcd.print(" y ");
+        lcd.print(imu_y);
+        lcd.print(" z ");
+        lcd.print(imu_z);
+
+      break;
+      case 4:
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Color: r ");
+        lcd.print(color_r);
+
+        lcd.setCursor(0, 1);
+        lcd.print(" g ");
+        lcd.print(color_g);
+        lcd.print(" b ");
+        lcd.print(color_b);
+
+      break;
+      case 5:
+        lcd.clear();                 // clear display
+        lcd.setCursor(0, 0);         // move cursor to   (0, 0)
+        lcd.print("VWC1 = ");        // print message at (0, 0)
+        lcd.setCursor(7, 0);
+        lcd.print(VWCvalue);
+        lcd.setCursor(0, 1);
+        lcd.print("EC = ");
+        lcd.setCursor(5, 1);
+        lcd.print(EC);
+        lcd.setCursor(12, 0);
+        lcd.print("Temp");
+        lcd.setCursor(12, 1);
+        lcd.print(TEMP);
+      break;
+      
+      default:
+        return 0;
+      break;
     }
     
-    parseFlag = false; // Reset parseFlag
+      delay(500);
+      parseFlag = false; // Reset parseFlag
   }
 }
